@@ -1,0 +1,28 @@
+{
+  "name": "uni-stay",
+  "version": "1.0.0",
+  "description": "Smart Student Housing Reservation System—a digital platform designed to streamline the process of finding, viewing, and reserving off-campus student accommodation near the university. The system will connect students directly with landlords/property managers, ensuring a transparent, quick, and reliable booking experience.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -i ./css/tailwind-input.css -o ./css/tailwind-output.css",
+    "watch": "tailwindcss -i ./css/tailwind-input.css -o ./css/tailwind-output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khnmoa/Uni-Stay.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/khnmoa/Uni-Stay/issues"
+  },
+  "homepage": "https://github.com/khnmoa/Uni-Stay#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.14"
+  }
+}
