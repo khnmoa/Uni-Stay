@@ -1,7 +1,12 @@
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.html", "./**/*.{js,html}"],
+  content: [
+  "./*.html",
+  "./css/**/*.{html,js}",
+  "./js/**/*.{html,js}",
+  './pages/**/*.{html,js}'
+],
   theme: {
     extend: {
       colors: {
@@ -15,6 +20,8 @@ module.exports = {
         borderLight: "#D5D5D5",
         // لون النص الداكن
         textDark: "#333333",
+        // لون النص الفاتح
+        textLight: "#E6EEF5",
         // لون mint الأخضر
         mint: "#95CAAC",
       },

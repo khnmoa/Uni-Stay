@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/favicon.png" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link href="../css/tailwind-output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/gallery.css" />
+    <title>Uni-Stay | Search</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <header
+      id="navbar"
+      class="navbar sticky top-0 left-0 w-full h-16 z-50 bg-accent shadow-sm"
+    >
+      <nav
+        class="container flex flex-1 gap-2 items-center justify-between h-full mx-auto px-4"
+      >
+        <div class="logo-section flex items-center justify-between gap-2">
+          <div class="">
+            <img src="../assets/favicon.png" alt="Uni-Stay Logo" class="h-10" />
+          </div>
+          <a href="../index.html"
+            ><span class="font-bold text-2xl text-textLight">Uni-Stay</span></a
+          >
+        </div>
+        <!-- <i class="fa-solid fa-bars text-textLight md:hidden"></i> -->
+        <ul class="hidden md:flex items-center justify-center gap-4">
+          <li>
+            <a
+              href="../pages/gallery.html"
+              class="text-textLight text-base font-semibold hover:text-white transition-colors duration-200"
+              >Browse</a
+            >
+          </li>
+          <li>
+            <a
+              href="../index.html#how-it-works"
+              class="text-textLight text-base font-semibold hover:text-white transition-colors duration-200"
+              >How it works</a
+            >
+          </li>
+          <li>
+            <a
+              href="../pages/owner.html"
+              class="text-textLight text-base font-semibold hover:text-white transition-colors duration-200"
+              >For landlords</a
+            >
+          </li>
+          <li>
+            <a
+              href="../pages/contactus.html"
+              class="text-textLight text-base font-semibold hover:text-white transition-colors duration-200"
+              >Help</a
+            >
+          </li>
+        </ul>
+        <div class="flex items-center justify-between gap-2">
+          <a href="../pages/favorites.html"
+            ><i class="fa-solid fa-heart text-mint"></i
+          ></a>
+          <a href="../pages/profile.html"
+            ><i class="fa-solid fa-user text-mint"></i
+          ></a>
+          <a href="../pages/register.html"
+            ><button
+              class="bg-primary text-white py-1 px-3 rounded hover:bg-primary/90 duration-200"
+            >
+              Sign up
+            </button></a
+          >
+        </div>
+      </nav>
+    </header>
+    <!--Navbar End-->
+    <!--Search Results and properties filtring-->
+    <div class="search-page bg-cream py-16">
+      <div class="filter container mx-auto px-4">
+        <section
+          class="filter-section grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-between items-center bg-primary/60 backdrop-blur-md rounded-lg p-8 mx-auto mb-16 shadow-md"
+        >
+          <section class="relative mx-auto w-full">
+            <p class="capitalize text-textLight font-semibold ms-2 mb-2">
+              location
+            </p>
+            <input
+              type="text"
+              name="location"
+              id="location"
+              placeholder="city or university"
+              class="rounded-2xl border border-[2px] border-textDark bg-textLight placeholder:text-textDark/80 text-textDark focus:outline-none focus:border-mint ps-8 pe-2 h-10 w-full block leading-[40px]"
+            />
+            <i
+              class="fa-solid fa-location-dot text-base text-textDark absolute bottom-[7px] left-2"
+            ></i>
+          </section>
+          <section class="relative mx-auto w-full">
+            <p class="capitalize text-textLight font-semibold ms-2 mb-2">
+              Move-in Date
+            </p>
+            <input
+              type="date"
+              name="date"
+              id="date"
+              placeholder="DD/MM/YYYY"
+              class="px-6 appearance-none rounded-2xl border border-[2px] border-textDark bg-textLight placeholder:text-textDark/80 text-textDark placeholder:text-textLight/60 focus:outline-none focus:border-mint ps-8 pe-2 h-10 w-full block leading-[40px]"
+            />
+            <i
+              class="fa-solid fa-calendar-days text-base text-textDark absolute bottom-[7px] left-2"
+            ></i>
+            
+          </section>
+          <section class="relative mx-auto w-full">
+            <p class="capitalize text-textLight font-semibold ms-2 mb-2">
+              Accommodation Type
+            </p>
+            <select
+              name="accommodation"
+              id="accommodation"
+              class="rounded-2xl border border-[2px] border-textDark bg-textLight text-textDark focus:outline-none focus:border-mint px-3 h-10 appearance-none w-full block leading-[40px]"
+            >
+              <option value="" disabled selected>Select type</option>
+              <option value="studio">Studio</option>
+              <option value="1-bedroom">Shared Room</option>
+              <option value="2-bedroom">Private Room</option>
+            </select>
+            <i
+              class="fa-solid fa-angle-down text-base text-textDark absolute bottom-[7px] right-2 pointer-events-none"
+            ></i>
+          </section>
+          <section class="relative mx-auto w-full">
+            <p class="capitalize text-textLight font-semibold ms-2 mb-2">
+              Price Range
+            </p>
+            <div class="flex justify-between gap-2 w-full overflow-hidden ">
+              <input
+                type="text"
+                name="min-price"
+                id="min-price"
+                placeholder="Min"
+                class="rounded-2xl border border-[2px] border-textDark bg-textLight placeholder:text-textDark/80 text-textDark focus:outline-none focus:border-mint ps-2 pe-8 h-10 w-1/2 leading-[40px]"
+              />
+              <input
+                type="text"
+                name="max-price"
+                id="max-price"
+                placeholder="Max"
+                class="rounded-2xl border border-[2px] border-textDark bg-textLight placeholder:text-textDark/80 text-textDark focus:outline-none focus:border-mint ps-2 pe-8 h-10 w-1/2 leading-[40px]"
+              />
+              <i
+                class="fa-solid fa-angle-down text-base text-textDark absolute bottom-[7px] right-1/2 -translate-x-2"
+              ></i>
+              <i
+                class="fa-solid  fa-angle-up text-base text-textDark absolute bottom-[7px] right-2"
+              ></i>
+            </div>
+          </section>
+          <!-- <button
+            id="search"
+            class="bg-primary text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-primary/90 transition-colors duration-200"
+            ><i class="fa-solid fa-search"></i> Search</button
+          > -->
+        </section>
+        
+        <!-- Cards Container -->
+        <div class="flex flex-wrap justify-center gap-6 px-4 my-24">
+          <!-- Card 1 -->
+          <div
+            class="bg-white rounded-2xl shadow-md overflow-hidden w-64 hover:shadow-xl hover:shadow-mint/60 transition cursor-pointer featured-card"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=800&q=60"
+                alt="Cozy Room"
+                class="w-full h-40 object-cover"
+              />
+              <div
+                class="absolute top-2 left-2 bg-mint/30 backdrop-blur-md text-textDark text-sm font-semibold px-3 py-1 rounded-lg"
+              >
+                Private Room
+              </div>
+              <div
+                class="absolute top-2 right-2 bg-cream opacity-80 hover:opacity-100 transition-all duration-300 rounded-lg size-7 flex items-center justify-center"
+              >
+                <i
+                  class="fa-regular fa-heart text-mint cursor-pointer transition-all duration-200"
+                ></i>
+              </div>
+            </div>
+            <div class="p-4 text-left">
+              <h3 class="font-semibold text-sm mb-1">
+                Cozy Private Room near Campus
+              </h3>
+              <p class="text-gray-500 text-sm flex items-center gap-1">
+                <i class="fa-solid fa-location-dot text-mint-800"></i> Cambridge,
+                MA
+              </p>
+              <div class="flex justify-between items-center mt-3">
+                <span class="text-[#E44D26] font-semibold"
+                  >$850 <span class="text-gray-500 text-sm">/mo</span></span
+                >
+                <span class="flex items-center gap-1 text-sm text-textDark/60">
+                  <i class="fa-solid fa-star text-yellow-400"></i> 4.5
+                </span>
+              </div>
+              <div class="flex items-center gap-3 mt-3 text-gray-500 text-sm">
+                <span
+                  ><i class="fa-solid fa-wifi text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Wi-Fi</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-utensils text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Kitchen</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-bath text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Bathroom</span></span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="bg-white rounded-2xl shadow-md overflow-hidden w-64 hover:shadow-xl hover:shadow-mint/60 transition cursor-pointer featured-card"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=60"
+                alt="Studio Apartment"
+                class="w-full h-40 object-cover"
+              />
+              <div
+                class="absolute top-2 left-2 bg-mint/30 backdrop-blur-md text-textDark text-sm font-semibold px-3 py-1 rounded-lg"
+              >
+                Studio Apartment
+              </div>
+              <div
+                class="absolute top-2 right-2 bg-cream opacity-80 hover:opacity-100 transition-all duration-300 rounded-lg size-7 flex items-center justify-center"
+              >
+                <i
+                  class="fa-regular fa-heart text-mint cursor-pointer transition-all duration-200"
+                ></i>
+              </div>
+            </div>
+            <div class="p-4 text-left">
+              <h3 class="font-semibold text-sm mb-1">
+                Modern Studio near City Center
+              </h3>
+              <p class="text-gray-500 text-sm flex items-center gap-1">
+                <i class="fa-solid fa-location-dot text-mint-800"></i> Boston, MA
+              </p>
+              <div class="flex justify-between items-center mt-3">
+                <span class="text-[#E44D26] font-semibold"
+                  >$1,050 <span class="text-gray-500 text-sm">/mo</span></span
+                >
+                <span class="flex items-center gap-1 text-sm text-textDark/60">
+                  <i class="fa-solid fa-star text-yellow-400"></i> 4.8
+                </span>
+              </div>
+              <div class="flex items-center gap-3 mt-3 text-gray-500 text-sm">
+                <span
+                  ><i class="fa-solid fa-wifi text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Wi-Fi</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-tv text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">TV</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-snowflake text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">A/C</span></span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="bg-white rounded-2xl shadow-md overflow-hidden w-64 hover:shadow-xl hover:shadow-mint/60 transition cursor-pointer featured-card"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=800&q=60"
+                alt="Shared Room"
+                class="w-full h-40 object-cover"
+              />
+              <div
+                class="absolute top-2 left-2 bg-mint/30 backdrop-blur-md text-textDark text-sm font-semibold px-3 py-1 rounded-lg"
+              >
+                Shared Room
+              </div>
+              <div
+                class="absolute top-2 right-2 bg-cream opacity-80 hover:opacity-100 transition-all duration-300 rounded-lg size-7 flex items-center justify-center"
+              >
+                <i
+                  class="fa-regular fa-heart text-mint cursor-pointer transition-all duration-200"
+                ></i>
+              </div>
+            </div>
+            <div class="p-4 text-left">
+              <h3 class="font-semibold text-sm mb-1">
+                Bright Shared Room with Balcony
+              </h3>
+              <p class="text-gray-500 text-sm flex items-center gap-1">
+                <i class="fa-solid fa-location-dot text-mint-800"></i> Chicago, IL
+              </p>
+              <div class="flex justify-between items-center mt-3">
+                <span class="text-[#E44D26] font-semibold"
+                  >$650 <span class="text-gray-500 text-sm">/mo</span></span
+                >
+                <span class="flex items-center gap-1 text-sm text-textDark/60">
+                  <i class="fa-solid fa-star text-yellow-400"></i> 4.3
+                </span>
+              </div>
+              <div class="flex items-center gap-3 mt-3 text-gray-500 text-sm">
+                <span
+                  ><i class="fa-solid fa-wifi text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Wi-Fi</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-utensils text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Kitchen</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-laptop text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Desk</span></span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="bg-white rounded-2xl shadow-md overflow-hidden w-64 hover:shadow-xl hover:shadow-mint/60 transition cursor-pointer featured-card"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=800&q=60"
+                alt="Luxury Suite"
+                class="w-full h-40 object-cover"
+              />
+              <div
+                class="absolute top-2 left-2 bg-mint/30 backdrop-blur-md text-textDark text-sm font-semibold px-3 py-1 rounded-lg"
+              >
+                Private Suite
+              </div>
+              <div
+                class="absolute top-2 right-2 bg-cream opacity-80 hover:opacity-100 transition-all duration-300 rounded-lg size-7 flex items-center justify-center"
+              >
+                <i
+                  class="fa-regular fa-heart text-mint cursor-pointer transition-all duration-200"
+                ></i>
+              </div>
+            </div>
+            <div class="p-4 text-left">
+              <h3 class="font-semibold text-sm mb-1">
+                Luxury Suite with City View
+              </h3>
+              <p class="text-gray-500 text-sm flex items-center gap-1">
+                <i class="fa-solid fa-location-dot text-mint-800"></i> New York,
+                NY
+              </p>
+              <div class="flex justify-between items-center mt-3">
+                <span class="text-[#E44D26] font-semibold"
+                  >$1,400 <span class="text-gray-500 text-sm">/mo</span></span
+                >
+                <span class="flex items-center gap-1 text-sm text-textDark/60">
+                  <i class="fa-solid fa-star text-yellow-400"></i> 4.9
+                </span>
+              </div>
+              <div class="flex items-center gap-3 mt-3 text-gray-500 text-sm">
+                <span
+                  ><i class="fa-solid fa-wifi text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Wi-Fi</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-tv text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">TV</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-bath text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Bathroom</span></span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 1 -->
+          <div
+            class="bg-white rounded-2xl shadow-md overflow-hidden w-64 hover:shadow-xl hover:shadow-mint/60 transition cursor-pointer featured-card"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=800&q=60"
+                alt="Cozy Room"
+                class="w-full h-40 object-cover"
+              />
+              <div
+                class="absolute top-2 left-2 bg-mint/30 backdrop-blur-md text-textDark text-sm font-semibold px-3 py-1 rounded-lg"
+              >
+                Private Room
+              </div>
+              <div
+                class="absolute top-2 right-2 bg-cream opacity-80 hover:opacity-100 transition-all duration-300 rounded-lg size-7 flex items-center justify-center"
+              >
+                <i
+                  class="fa-regular fa-heart text-mint cursor-pointer transition-all duration-200"
+                ></i>
+              </div>
+            </div>
+            <div class="p-4 text-left">
+              <h3 class="font-semibold text-sm mb-1">
+                Cozy Private Room near Campus
+              </h3>
+              <p class="text-gray-500 text-sm flex items-center gap-1">
+                <i class="fa-solid fa-location-dot text-mint-800"></i> Cambridge,
+                MA
+              </p>
+              <div class="flex justify-between items-center mt-3">
+                <span class="text-[#E44D26] font-semibold"
+                  >$850 <span class="text-gray-500 text-sm">/mo</span></span
+                >
+                <span class="flex items-center gap-1 text-sm text-textDark/60">
+                  <i class="fa-solid fa-star text-yellow-400"></i> 4.5
+                </span>
+              </div>
+              <div class="flex items-center gap-3 mt-3 text-gray-500 text-sm">
+                <span
+                  ><i class="fa-solid fa-wifi text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Wi-Fi</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-utensils text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Kitchen</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-bath text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Bathroom</span></span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="bg-white rounded-2xl shadow-md overflow-hidden w-64 hover:shadow-xl hover:shadow-mint/60 transition cursor-pointer featured-card"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=60"
+                alt="Studio Apartment"
+                class="w-full h-40 object-cover"
+              />
+              <div
+                class="absolute top-2 left-2 bg-mint/30 backdrop-blur-md text-textDark text-sm font-semibold px-3 py-1 rounded-lg"
+              >
+                Studio Apartment
+              </div>
+              <div
+                class="absolute top-2 right-2 bg-cream opacity-80 hover:opacity-100 transition-all duration-300 rounded-lg size-7 flex items-center justify-center"
+              >
+                <i
+                  class="fa-regular fa-heart text-mint cursor-pointer transition-all duration-200"
+                ></i>
+              </div>
+            </div>
+            <div class="p-4 text-left">
+              <h3 class="font-semibold text-sm mb-1">
+                Modern Studio near City Center
+              </h3>
+              <p class="text-gray-500 text-sm flex items-center gap-1">
+                <i class="fa-solid fa-location-dot text-mint-800"></i> Boston, MA
+              </p>
+              <div class="flex justify-between items-center mt-3">
+                <span class="text-[#E44D26] font-semibold"
+                  >$1,050 <span class="text-gray-500 text-sm">/mo</span></span
+                >
+                <span class="flex items-center gap-1 text-sm text-textDark/60">
+                  <i class="fa-solid fa-star text-yellow-400"></i> 4.8
+                </span>
+              </div>
+              <div class="flex items-center gap-3 mt-3 text-gray-500 text-sm">
+                <span
+                  ><i class="fa-solid fa-wifi text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Wi-Fi</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-tv text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">TV</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-snowflake text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">A/C</span></span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="bg-white rounded-2xl shadow-md overflow-hidden w-64 hover:shadow-xl hover:shadow-mint/60 transition cursor-pointer featured-card"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=800&q=60"
+                alt="Shared Room"
+                class="w-full h-40 object-cover"
+              />
+              <div
+                class="absolute top-2 left-2 bg-mint/30 backdrop-blur-md text-textDark text-sm font-semibold px-3 py-1 rounded-lg"
+              >
+                Shared Room
+              </div>
+              <div
+                class="absolute top-2 right-2 bg-cream opacity-80 hover:opacity-100 transition-all duration-300 rounded-lg size-7 flex items-center justify-center"
+              >
+                <i
+                  class="fa-regular fa-heart text-mint cursor-pointer transition-all duration-200"
+                ></i>
+              </div>
+            </div>
+            <div class="p-4 text-left">
+              <h3 class="font-semibold text-sm mb-1">
+                Bright Shared Room with Balcony
+              </h3>
+              <p class="text-gray-500 text-sm flex items-center gap-1">
+                <i class="fa-solid fa-location-dot text-mint-800"></i> Chicago, IL
+              </p>
+              <div class="flex justify-between items-center mt-3">
+                <span class="text-[#E44D26] font-semibold"
+                  >$650 <span class="text-gray-500 text-sm">/mo</span></span
+                >
+                <span class="flex items-center gap-1 text-sm text-textDark/60">
+                  <i class="fa-solid fa-star text-yellow-400"></i> 4.3
+                </span>
+              </div>
+              <div class="flex items-center gap-3 mt-3 text-gray-500 text-sm">
+                <span
+                  ><i class="fa-solid fa-wifi text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Wi-Fi</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-utensils text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Kitchen</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-laptop text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Desk</span></span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="bg-white rounded-2xl shadow-md overflow-hidden w-64 hover:shadow-xl hover:shadow-mint/60 transition cursor-pointer featured-card"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=800&q=60"
+                alt="Luxury Suite"
+                class="w-full h-40 object-cover"
+              />
+              <div
+                class="absolute top-2 left-2 bg-mint/30 backdrop-blur-md text-textDark text-sm font-semibold px-3 py-1 rounded-lg"
+              >
+                Private Suite
+              </div>
+              <div
+                class="absolute top-2 right-2 bg-cream opacity-80 hover:opacity-100 transition-all duration-300 rounded-lg size-7 flex items-center justify-center"
+              >
+                <i
+                  class="fa-regular fa-heart text-mint cursor-pointer transition-all duration-200"
+                ></i>
+              </div>
+            </div>
+            <div class="p-4 text-left">
+              <h3 class="font-semibold text-sm mb-1">
+                Luxury Suite with City View
+              </h3>
+              <p class="text-gray-500 text-sm flex items-center gap-1">
+                <i class="fa-solid fa-location-dot text-mint-800"></i> New York,
+                NY
+              </p>
+              <div class="flex justify-between items-center mt-3">
+                <span class="text-[#E44D26] font-semibold"
+                  >$1,400 <span class="text-gray-500 text-sm">/mo</span></span
+                >
+                <span class="flex items-center gap-1 text-sm text-textDark/60">
+                  <i class="fa-solid fa-star text-yellow-400"></i> 4.9
+                </span>
+              </div>
+              <div class="flex items-center gap-3 mt-3 text-gray-500 text-sm">
+                <span
+                  ><i class="fa-solid fa-wifi text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Wi-Fi</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-tv text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">TV</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-bath text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Bathroom</span></span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 1 -->
+          <div
+            class="bg-white rounded-2xl shadow-md overflow-hidden w-64 hover:shadow-xl hover:shadow-mint/60 transition cursor-pointer featured-card"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=800&q=60"
+                alt="Cozy Room"
+                class="w-full h-40 object-cover"
+              />
+              <div
+                class="absolute top-2 left-2 bg-mint/30 backdrop-blur-md text-textDark text-sm font-semibold px-3 py-1 rounded-lg"
+              >
+                Private Room
+              </div>
+              <div
+                class="absolute top-2 right-2 bg-cream opacity-80 hover:opacity-100 transition-all duration-300 rounded-lg size-7 flex items-center justify-center"
+              >
+                <i
+                  class="fa-regular fa-heart text-mint cursor-pointer transition-all duration-200"
+                ></i>
+              </div>
+            </div>
+            <div class="p-4 text-left">
+              <h3 class="font-semibold text-sm mb-1">
+                Cozy Private Room near Campus
+              </h3>
+              <p class="text-gray-500 text-sm flex items-center gap-1">
+                <i class="fa-solid fa-location-dot text-mint-800"></i> Cambridge,
+                MA
+              </p>
+              <div class="flex justify-between items-center mt-3">
+                <span class="text-[#E44D26] font-semibold"
+                  >$850 <span class="text-gray-500 text-sm">/mo</span></span
+                >
+                <span class="flex items-center gap-1 text-sm text-textDark/60">
+                  <i class="fa-solid fa-star text-yellow-400"></i> 4.5
+                </span>
+              </div>
+              <div class="flex items-center gap-3 mt-3 text-gray-500 text-sm">
+                <span
+                  ><i class="fa-solid fa-wifi text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Wi-Fi</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-utensils text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Kitchen</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-bath text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Bathroom</span></span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="bg-white rounded-2xl shadow-md overflow-hidden w-64 hover:shadow-xl hover:shadow-mint/60 transition cursor-pointer featured-card"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=60"
+                alt="Studio Apartment"
+                class="w-full h-40 object-cover"
+              />
+              <div
+                class="absolute top-2 left-2 bg-mint/30 backdrop-blur-md text-textDark text-sm font-semibold px-3 py-1 rounded-lg"
+              >
+                Studio Apartment
+              </div>
+              <div
+                class="absolute top-2 right-2 bg-cream opacity-80 hover:opacity-100 transition-all duration-300 rounded-lg size-7 flex items-center justify-center"
+              >
+                <i
+                  class="fa-regular fa-heart text-mint cursor-pointer transition-all duration-200"
+                ></i>
+              </div>
+            </div>
+            <div class="p-4 text-left">
+              <h3 class="font-semibold text-sm mb-1">
+                Modern Studio near City Center
+              </h3>
+              <p class="text-gray-500 text-sm flex items-center gap-1">
+                <i class="fa-solid fa-location-dot text-mint-800"></i> Boston, MA
+              </p>
+              <div class="flex justify-between items-center mt-3">
+                <span class="text-[#E44D26] font-semibold"
+                  >$1,050 <span class="text-gray-500 text-sm">/mo</span></span
+                >
+                <span class="flex items-center gap-1 text-sm text-textDark/60">
+                  <i class="fa-solid fa-star text-yellow-400"></i> 4.8
+                </span>
+              </div>
+              <div class="flex items-center gap-3 mt-3 text-gray-500 text-sm">
+                <span
+                  ><i class="fa-solid fa-wifi text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Wi-Fi</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-tv text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">TV</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-snowflake text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">A/C</span></span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="bg-white rounded-2xl shadow-md overflow-hidden w-64 hover:shadow-xl hover:shadow-mint/60 transition cursor-pointer featured-card"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=800&q=60"
+                alt="Shared Room"
+                class="w-full h-40 object-cover"
+              />
+              <div
+                class="absolute top-2 left-2 bg-mint/30 backdrop-blur-md text-textDark text-sm font-semibold px-3 py-1 rounded-lg"
+              >
+                Shared Room
+              </div>
+              <div
+                class="absolute top-2 right-2 bg-cream opacity-80 hover:opacity-100 transition-all duration-300 rounded-lg size-7 flex items-center justify-center"
+              >
+                <i
+                  class="fa-regular fa-heart text-mint cursor-pointer transition-all duration-200"
+                ></i>
+              </div>
+            </div>
+            <div class="p-4 text-left">
+              <h3 class="font-semibold text-sm mb-1">
+                Bright Shared Room with Balcony
+              </h3>
+              <p class="text-gray-500 text-sm flex items-center gap-1">
+                <i class="fa-solid fa-location-dot text-mint-800"></i> Chicago, IL
+              </p>
+              <div class="flex justify-between items-center mt-3">
+                <span class="text-[#E44D26] font-semibold"
+                  >$650 <span class="text-gray-500 text-sm">/mo</span></span
+                >
+                <span class="flex items-center gap-1 text-sm text-textDark/60">
+                  <i class="fa-solid fa-star text-yellow-400"></i> 4.3
+                </span>
+              </div>
+              <div class="flex items-center gap-3 mt-3 text-gray-500 text-sm">
+                <span
+                  ><i class="fa-solid fa-wifi text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Wi-Fi</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-utensils text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Kitchen</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-laptop text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Desk</span></span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="bg-white rounded-2xl shadow-md overflow-hidden w-64 hover:shadow-xl hover:shadow-mint/60 transition cursor-pointer featured-card"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=800&q=60"
+                alt="Luxury Suite"
+                class="w-full h-40 object-cover"
+              />
+              <div
+                class="absolute top-2 left-2 bg-mint/30 backdrop-blur-md text-textDark text-sm font-semibold px-3 py-1 rounded-lg"
+              >
+                Private Suite
+              </div>
+              <div
+                class="absolute top-2 right-2 bg-cream opacity-80 hover:opacity-100 transition-all duration-300 rounded-lg size-7 flex items-center justify-center"
+              >
+                <i
+                  class="fa-regular fa-heart text-mint cursor-pointer transition-all duration-200"
+                ></i>
+              </div>
+            </div>
+            <div class="p-4 text-left">
+              <h3 class="font-semibold text-sm mb-1">
+                Luxury Suite with City View
+              </h3>
+              <p class="text-gray-500 text-sm flex items-center gap-1">
+                <i class="fa-solid fa-location-dot text-mint-800"></i> New York,
+                NY
+              </p>
+              <div class="flex justify-between items-center mt-3">
+                <span class="text-[#E44D26] font-semibold"
+                  >$1,400 <span class="text-gray-500 text-sm">/mo</span></span
+                >
+                <span class="flex items-center gap-1 text-sm text-textDark/60">
+                  <i class="fa-solid fa-star text-yellow-400"></i> 4.9
+                </span>
+              </div>
+              <div class="flex items-center gap-3 mt-3 text-gray-500 text-sm">
+                <span
+                  ><i class="fa-solid fa-wifi text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Wi-Fi</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-tv text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">TV</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-bath text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Bathroom</span></span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 1 -->
+          <div
+            class="bg-white rounded-2xl shadow-md overflow-hidden w-64 hover:shadow-xl hover:shadow-mint/60 transition cursor-pointer featured-card"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=800&q=60"
+                alt="Cozy Room"
+                class="w-full h-40 object-cover"
+              />
+              <div
+                class="absolute top-2 left-2 bg-mint/30 backdrop-blur-md text-textDark text-sm font-semibold px-3 py-1 rounded-lg"
+              >
+                Private Room
+              </div>
+              <div
+                class="absolute top-2 right-2 bg-cream opacity-80 hover:opacity-100 transition-all duration-300 rounded-lg size-7 flex items-center justify-center"
+              >
+                <i
+                  class="fa-regular fa-heart text-mint cursor-pointer transition-all duration-200"
+                ></i>
+              </div>
+            </div>
+            <div class="p-4 text-left">
+              <h3 class="font-semibold text-sm mb-1">
+                Cozy Private Room near Campus
+              </h3>
+              <p class="text-gray-500 text-sm flex items-center gap-1">
+                <i class="fa-solid fa-location-dot text-mint-800"></i> Cambridge,
+                MA
+              </p>
+              <div class="flex justify-between items-center mt-3">
+                <span class="text-[#E44D26] font-semibold"
+                  >$850 <span class="text-gray-500 text-sm">/mo</span></span
+                >
+                <span class="flex items-center gap-1 text-sm text-textDark/60">
+                  <i class="fa-solid fa-star text-yellow-400"></i> 4.5
+                </span>
+              </div>
+              <div class="flex items-center gap-3 mt-3 text-gray-500 text-sm">
+                <span
+                  ><i class="fa-solid fa-wifi text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Wi-Fi</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-utensils text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Kitchen</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-bath text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Bathroom</span></span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="bg-white rounded-2xl shadow-md overflow-hidden w-64 hover:shadow-xl hover:shadow-mint/60 transition cursor-pointer featured-card"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=60"
+                alt="Studio Apartment"
+                class="w-full h-40 object-cover"
+              />
+              <div
+                class="absolute top-2 left-2 bg-mint/30 backdrop-blur-md text-textDark text-sm font-semibold px-3 py-1 rounded-lg"
+              >
+                Studio Apartment
+              </div>
+              <div
+                class="absolute top-2 right-2 bg-cream opacity-80 hover:opacity-100 transition-all duration-300 rounded-lg size-7 flex items-center justify-center"
+              >
+                <i
+                  class="fa-regular fa-heart text-mint cursor-pointer transition-all duration-200"
+                ></i>
+              </div>
+            </div>
+            <div class="p-4 text-left">
+              <h3 class="font-semibold text-sm mb-1">
+                Modern Studio near City Center
+              </h3>
+              <p class="text-gray-500 text-sm flex items-center gap-1">
+                <i class="fa-solid fa-location-dot text-mint-800"></i> Boston, MA
+              </p>
+              <div class="flex justify-between items-center mt-3">
+                <span class="text-[#E44D26] font-semibold"
+                  >$1,050 <span class="text-gray-500 text-sm">/mo</span></span
+                >
+                <span class="flex items-center gap-1 text-sm text-textDark/60">
+                  <i class="fa-solid fa-star text-yellow-400"></i> 4.8
+                </span>
+              </div>
+              <div class="flex items-center gap-3 mt-3 text-gray-500 text-sm">
+                <span
+                  ><i class="fa-solid fa-wifi text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Wi-Fi</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-tv text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">TV</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-snowflake text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">A/C</span></span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="bg-white rounded-2xl shadow-md overflow-hidden w-64 hover:shadow-xl hover:shadow-mint/60 transition cursor-pointer featured-card"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=800&q=60"
+                alt="Shared Room"
+                class="w-full h-40 object-cover"
+              />
+              <div
+                class="absolute top-2 left-2 bg-mint/30 backdrop-blur-md text-textDark text-sm font-semibold px-3 py-1 rounded-lg"
+              >
+                Shared Room
+              </div>
+              <div
+                class="absolute top-2 right-2 bg-cream opacity-80 hover:opacity-100 transition-all duration-300 rounded-lg size-7 flex items-center justify-center"
+              >
+                <i
+                  class="fa-regular fa-heart text-mint cursor-pointer transition-all duration-200"
+                ></i>
+              </div>
+            </div>
+            <div class="p-4 text-left">
+              <h3 class="font-semibold text-sm mb-1">
+                Bright Shared Room with Balcony
+              </h3>
+              <p class="text-gray-500 text-sm flex items-center gap-1">
+                <i class="fa-solid fa-location-dot text-mint-800"></i> Chicago, IL
+              </p>
+              <div class="flex justify-between items-center mt-3">
+                <span class="text-[#E44D26] font-semibold"
+                  >$650 <span class="text-gray-500 text-sm">/mo</span></span
+                >
+                <span class="flex items-center gap-1 text-sm text-textDark/60">
+                  <i class="fa-solid fa-star text-yellow-400"></i> 4.3
+                </span>
+              </div>
+              <div class="flex items-center gap-3 mt-3 text-gray-500 text-sm">
+                <span
+                  ><i class="fa-solid fa-wifi text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Wi-Fi</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-utensils text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Kitchen</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-laptop text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Desk</span></span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="bg-white rounded-2xl shadow-md overflow-hidden w-64 hover:shadow-xl hover:shadow-mint/60 transition cursor-pointer featured-card"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=800&q=60"
+                alt="Luxury Suite"
+                class="w-full h-40 object-cover"
+              />
+              <div
+                class="absolute top-2 left-2 bg-mint/30 backdrop-blur-md text-textDark text-sm font-semibold px-3 py-1 rounded-lg"
+              >
+                Private Suite
+              </div>
+              <div
+                class="absolute top-2 right-2 bg-cream opacity-80 hover:opacity-100 transition-all duration-300 rounded-lg size-7 flex items-center justify-center"
+              >
+                <i
+                  class="fa-regular fa-heart text-mint cursor-pointer transition-all duration-200"
+                ></i>
+              </div>
+            </div>
+            <div class="p-4 text-left">
+              <h3 class="font-semibold text-sm mb-1">
+                Luxury Suite with City View
+              </h3>
+              <p class="text-gray-500 text-sm flex items-center gap-1">
+                <i class="fa-solid fa-location-dot text-mint-800"></i> New York,
+                NY
+              </p>
+              <div class="flex justify-between items-center mt-3">
+                <span class="text-[#E44D26] font-semibold"
+                  >$1,400 <span class="text-gray-500 text-sm">/mo</span></span
+                >
+                <span class="flex items-center gap-1 text-sm text-textDark/60">
+                  <i class="fa-solid fa-star text-yellow-400"></i> 4.9
+                </span>
+              </div>
+              <div class="flex items-center gap-3 mt-3 text-gray-500 text-sm">
+                <span
+                  ><i class="fa-solid fa-wifi text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Wi-Fi</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-tv text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">TV</span></span
+                >
+                <span
+                  ><i class="fa-solid fa-bath text-textDark/60"></i>
+                  <span class="text-xs text-textDark/60">Bathroom</span></span
+                >
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    </div>  
+    <!--Footer-->
+    <footer class="bg-accent text-textLight p-8 md:p-12 lg:p-16">
+      <div class="container mx-auto">
+        <!-- Top section: 4-column grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-4 gap-10 lg:gap-8">
+          <!-- Column 1: Brand and Socials -->
+          <div>
+            <!-- Logo -->
+            <a href="../index.html" class="flex items-center gap-2 mb-4">
+              <img
+                class="w-10 h-10"
+                src="../assets/favicon.png"
+                alt="Uni-Stay Logo"
+              />
+              <span class="text-2xl font-semibold text-white">Uni-Stay</span>
+            </a>
+            <p class="text-textLight/80 text-sm leading-relaxed pr-4">
+              Your trusted partner in finding the perfect student accommodation.
+              Making university life comfortable and affordable.
+            </p>
+            <!-- Social Icons -->
+            <div class="flex gap-4 mt-6">
+              <a
+                href="#"
+                class="text-textLight/80 hover:text-white transition-colors duration-200"
+                aria-label="Facebook"
+              >
+                <i class="fab fa-facebook-f fa-lg"></i>
+              </a>
+              <a
+                href="#"
+                class="text-textLight/80 hover:text-white transition-colors duration-200"
+                aria-label="Twitter"
+              >
+                <i class="fab fa-twitter fa-lg"></i>
+              </a>
+              <a
+                href="#"
+                class="text-textLight/80 hover:text-white transition-colors duration-200"
+                aria-label="Instagram"
+              >
+                <i class="fab fa-instagram fa-lg"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 2: Quick Links -->
+          <div>
+            <h3 class="text-lg font-semibold text-textLight mb-5">
+              Quick Links
+            </h3>
+            <ul class="space-y-3 text-textLight/80">
+              <li>
+                <a href="../pages/gallery.html" class="hover:text-textLight transition-colors"
+                  >Browse Properties</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../index.html#how-it-works"
+                  class="hover:text-textLight transition-colors"
+                  >How It Works</a
+                >
+              </li>
+              <li>
+                <a href="../pages/owner.html" class="hover:text-textLight transition-colors"
+                  >For Landlords</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-textLight transition-colors"
+                  >Student Resources</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors">Blog</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Support -->
+          <div>
+            <h3 class="text-lg font-semibold text-textLight mb-5">Support</h3>
+            <ul class="space-y-3 text-textLight/80">
+              <li>
+                <a href="../pages/contactus.html" class="hover:text-textLight transition-colors"
+                  >Help Center</a
+                >
+              </li>
+              <li>
+                <a href="../pages/contactus.html" class="hover:text-textLight transition-colors"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-textLight transition-colors"
+                  >Safety Guidelines</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-textLight transition-colors"
+                  >Terms of Service</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-textLight transition-colors"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Contact Info -->
+          <div>
+            <h3 class="text-lg font-semibold text-textLight mb-5">
+              Contact Info
+            </h3>
+            <ul class="space-y-4 text-textLight/80">
+              <!-- Email -->
+              <li
+                class="flex items-center gap-3 hover:text-textLight transition-colors"
+              >
+                <i class="fas fa-envelope text-lg mt-1 w-5 text-center"></i>
+                <a href="mailto:hello@uni-stay.com" class="transition-colors"
+                  >hello@uni-stay.com</a
+                >
+              </li>
+              <!-- Phone -->
+              <li class="flex items-center gap-3">
+                <i class="fas fa-phone text-lg mt-1 w-5 text-center"></i>
+                <a
+                  href="tel:+15551234567"
+                  class="hover:text-textLight transition-colors"
+                  >+1 (555) 123-4567</a
+                >
+              </li>
+              <!-- Address -->
+              <li class="flex items-center gap-3">
+                <i
+                  class="fas fa-map-marker-alt text-lg mt-1 w-5 text-center"
+                ></i>
+                <span>
+                  123 University Ave<br />
+                  Student District, CA 94158
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom section: Copyright -->
+        <div class="mt-12 pt-8 border-t border-primary">
+          <p class="text-sm text-center text-textLight/80">
+            © <span id="current-year">2025</span> Uni-stay. All rights reserved.
+            Code Crafters @ DEPI R3 Is Making student housing simple and secure.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!--Footer End-->
+    <script src="../js/main.js"></script>
+  </body>
+</html>
