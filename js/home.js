@@ -1,6 +1,8 @@
 
-document.querySelectorAll('.fa-heart').forEach(icon => {
-    icon.addEventListener('click', () => {
+document.querySelectorAll('.fa-heart').forEach((icon, index) => {
+    if (index === 0) return;
+    icon.addEventListener('click', (e) => {
+      e.stopPropagation(); // prevent click triggering the card link
       icon.classList.toggle('fa-solid');
       icon.classList.toggle('fa-regular');
     });

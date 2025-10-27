@@ -90,8 +90,8 @@
             <input
               type="text"
               name="location"
-              id="location"
-              placeholder="city or university"
+              id="filter-location"
+              placeholder="search by City..."
               class="rounded-2xl border border-[2px] border-textDark bg-textLight placeholder:text-textDark/80 text-textDark focus:outline-none focus:border-mint ps-8 pe-2 h-10 w-full block leading-[40px]"
             />
             <i
@@ -105,7 +105,7 @@
             <input
               type="date"
               name="date"
-              id="date"
+              id="filter-date"
               placeholder="DD/MM/YYYY"
               class="px-6 appearance-none rounded-2xl border border-[2px] border-textDark bg-textLight placeholder:text-textDark/80 text-textDark placeholder:text-textLight/60 focus:outline-none focus:border-mint ps-8 pe-2 h-10 w-full block leading-[40px]"
             />
@@ -119,14 +119,11 @@
               Accommodation Type
             </p>
             <select
-              name="accommodation"
-              id="accommodation"
+              name="accommodation-type"
+              id="filter-type"
               class="rounded-2xl border border-[2px] border-textDark bg-textLight text-textDark focus:outline-none focus:border-mint px-3 h-10 appearance-none w-full block leading-[40px]"
             >
-              <option value="" disabled selected>Select type</option>
-              <option value="studio">Studio</option>
-              <option value="1-bedroom">Shared Room</option>
-              <option value="2-bedroom">Private Room</option>
+              <option value="">All Types</option>
             </select>
             <i
               class="fa-solid fa-angle-down text-base text-textDark absolute bottom-[7px] right-2 pointer-events-none"
@@ -140,14 +137,14 @@
               <input
                 type="text"
                 name="min-price"
-                id="min-price"
+                id="filter-min-price"
                 placeholder="Min"
                 class="rounded-2xl border border-[2px] border-textDark bg-textLight placeholder:text-textDark/80 text-textDark focus:outline-none focus:border-mint ps-2 pe-8 h-10 w-1/2 leading-[40px]"
               />
               <input
                 type="text"
                 name="max-price"
-                id="max-price"
+                id="filter-max-price"
                 placeholder="Max"
                 class="rounded-2xl border border-[2px] border-textDark bg-textLight placeholder:text-textDark/80 text-textDark focus:outline-none focus:border-mint ps-2 pe-8 h-10 w-1/2 leading-[40px]"
               />
@@ -167,7 +164,7 @@
         </section>
         
         <!-- Cards Container -->
-        <div class="flex flex-wrap justify-center gap-6 px-4 my-24">
+        <div id="properties-container" class="flex flex-wrap justify-center gap-6 px-4 my-24">
           <!-- Card 1 -->
           <div
             class="bg-white rounded-2xl shadow-md overflow-hidden w-64 hover:shadow-xl hover:shadow-mint/60 transition cursor-pointer featured-card"
@@ -1204,5 +1201,6 @@
     </footer>
     <!--Footer End-->
     <script src="../js/main.js"></script>
+    <script src="../js/filter.js"></script>
   </body>
 </html>

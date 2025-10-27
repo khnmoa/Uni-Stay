@@ -1,0 +1,562 @@
+[
+  {
+    "id": 1,
+    "title": "Affordable Studio in Giza",
+    "type": "Shared Room",
+    "price": 7096,
+    "location": "Ismailia",
+    "amenities": [
+      "Wi-Fi",
+      "Private Bathroom",
+      "Balcony"
+    ],
+    "rating": 4.5,
+    "image": "https://plus.unsplash.com/premium_photo-1675615667752-2ccda7042e7e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870"
+  },
+  {
+    "id": 2,
+    "title": "Furnished Apartment in 6th of October City",
+    "type": "Apartment",
+    "price": 4646,
+    "location": "Luxor",
+    "amenities": [
+      "Wi-Fi",
+      "Laundry",
+      "Smart TV"
+    ],
+    "rating": 4.6,
+    "image": "https://plus.unsplash.com/premium_photo-1675615949706-d241c824a3a8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870"
+  },
+  {
+    "id": 3,
+    "title": "Affordable Private Room in Mansoura",
+    "type": "Private Room",
+    "price": 4774,
+    "location": "Sheikh Zayed",
+    "amenities": [
+      "Wi-Fi",
+      "Laundry",
+      "Smart TV"
+    ],
+    "rating": 4.2,
+    "image": "https://plus.unsplash.com/premium_photo-1675615649309-84e1c110fb0e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=876"
+  },
+  {
+    "id": 4,
+    "title": "Cozy Studio in Alexandria",
+    "type": "Private Room",
+    "price": 9355,
+    "location": "Fayoum",
+    "amenities": [
+      "Wi-Fi",
+      "Private Bathroom",
+      "Balcony"
+    ],
+    "rating": 4.5,
+    "image": "https://plus.unsplash.com/premium_photo-1675615649309-84e1c110fb0e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=876"
+  },
+  {
+    "id": 5,
+    "title": "Cozy Private Room in Nasr City",
+    "type": "Private Room",
+    "price": 9024,
+    "location": "Aswan",
+    "amenities": [
+      "Wi-Fi",
+      "Laundry",
+      "Smart TV"
+    ],
+    "rating": 4.7,
+    "image": "https://plus.unsplash.com/premium_photo-1675615667883-38c070716700?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870"
+  },
+  {
+    "id": 6,
+    "title": "Affordable Studio in Mansoura",
+    "type": "Studio",
+    "price": 6349,
+    "location": "Luxor",
+    "amenities": [
+      "Wi-Fi",
+      "Laundry",
+      "Kitchen"
+    ],
+    "rating": 4.4,
+    "image": "https://plus.unsplash.com/premium_photo-1675615667883-38c070716700?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870"
+  },
+  {
+    "id": 7,
+    "title": "Furnished Shared Room in Zagazig",
+    "type": "Studio",
+    "price": 4642,
+    "location": "New Cairo",
+    "amenities": [
+      "Wi-Fi",
+      "Study Desk",
+      "Shared Kitchen"
+    ],
+    "rating": 4.3,
+    "image": "https://plus.unsplash.com/premium_photo-1661964210723-ff22b41a8a5f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774"
+  },
+  {
+    "id": 8,
+    "title": "Cozy Shared Room in Tanta",
+    "type": "Private Room",
+    "price": 9344,
+    "location": "Giza",
+    "amenities": [
+      "Wi-Fi",
+      "AC",
+      "Security"
+    ],
+    "rating": 3.9,
+    "image": "https://plus.unsplash.com/premium_photo-1675615667883-38c070716700?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870"
+  },
+  {
+    "id": 9,
+    "title": "Furnished Private Room in Alexandria",
+    "type": "Apartment",
+    "price": 10315,
+    "location": "Sohag",
+    "amenities": [
+      "Wi-Fi",
+      "AC",
+      "Security"
+    ],
+    "rating": 3.6,
+    "image": "https://plus.unsplash.com/premium_photo-1661962688308-2b00b88b9765?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774"
+  },
+  {
+    "id": 10,
+    "title": "Furnished Private Room in Aswan",
+    "type": "Private Room",
+    "price": 7648,
+    "location": "Cairo",
+    "amenities": [
+      "Wi-Fi",
+      "Laundry",
+      "Smart TV"
+    ],
+    "rating": 4.4,
+    "image": "https://plus.unsplash.com/premium_photo-1661962739798-0af59dc30d14?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=829"
+  },
+  {
+    "id": 11,
+    "title": "Cozy Studio in Cairo",
+    "type": "Studio",
+    "price": 10691,
+    "location": "Ismailia",
+    "amenities": [
+      "Wi-Fi",
+      "Private Bathroom",
+      "Balcony"
+    ],
+    "rating": 3.7,
+    "image": "https://plus.unsplash.com/premium_photo-1746471641440-124e23d6e634?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1032"
+  },
+  {
+    "id": 12,
+    "title": "Cozy Shared Room in New Cairo",
+    "type": "Apartment",
+    "price": 8304,
+    "location": "Minya",
+    "amenities": [
+      "Wi-Fi",
+      "Study Desk",
+      "Shared Kitchen"
+    ],
+    "rating": 4.3,
+    "image": "https://plus.unsplash.com/premium_photo-1736194029305-0679db1e368b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870"
+  },
+  {
+    "id": 13,
+    "title": "Affordable Apartment in Beni Suef",
+    "type": "Apartment",
+    "price": 8575,
+    "location": "Assiut",
+    "amenities": [
+      "Wi-Fi",
+      "AC",
+      "Security"
+    ],
+    "rating": 5.0,
+    "image": "https://plus.unsplash.com/premium_photo-1736194027718-a3fc5df8c79e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870"
+  },
+  {
+    "id": 14,
+    "title": "Modern Shared Room in New Cairo",
+    "type": "Apartment",
+    "price": 4531,
+    "location": "Port Said",
+    "amenities": [
+      "Wi-Fi",
+      "Private Bathroom",
+      "Balcony"
+    ],
+    "rating": 4.0,
+    "image": "https://plus.unsplash.com/premium_photo-1674815329379-3c96932d89b2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870"
+  },
+  {
+    "id": 15,
+    "title": "Luxury Studio in Ismailia",
+    "type": "Private Room",
+    "price": 10670,
+    "location": "Fayoum",
+    "amenities": [
+      "Wi-Fi",
+      "Laundry",
+      "Kitchen"
+    ],
+    "rating": 3.9,
+    "image": "https://plus.unsplash.com/premium_photo-1688822013354-b13bd86cc4bd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870"
+  },
+  {
+    "id": 16,
+    "title": "Furnished Private Room in Alexandria",
+    "type": "Private Room",
+    "price": 7608,
+    "location": "Aswan",
+    "amenities": [
+      "Wi-Fi",
+      "Private Bathroom",
+      "Balcony"
+    ],
+    "rating": 4.8,
+    "image": "https://plus.unsplash.com/premium_photo-1731966823198-b5824e2b3873?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870"
+  },
+  {
+    "id": 17,
+    "title": "Luxury Apartment in Nasr City",
+    "type": "Private Room",
+    "price": 7115,
+    "location": "6th of October City",
+    "amenities": [
+      "Wi-Fi",
+      "Private Bathroom",
+      "Balcony"
+    ],
+    "rating": 3.7,
+    "image": "https://plus.unsplash.com/premium_photo-1720707755672-fa44f1711954?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774"
+  },
+  {
+    "id": 18,
+    "title": "Furnished Private Room in Zagazig",
+    "type": "Apartment",
+    "price": 9091,
+    "location": "Assiut",
+    "amenities": [
+      "Wi-Fi",
+      "Laundry",
+      "Smart TV"
+    ],
+    "rating": 4.9,
+    "image": "https://images.unsplash.com/photo-1609815786487-6ac3811870b8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=871"
+  }, 
+  { 
+    "id": 19,
+    "title": "Modern Shared Room in Assiut",
+    "type": "Private Room",
+    "price": 8085,
+    "location": "Mansoura",
+    "amenities": [
+      "Wi-Fi",
+      "AC",
+      "Security"
+    ],
+    "rating": 4.0,
+    "image": "https://plus.unsplash.com/premium_photo-1676320514025-4caf7748f983?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870"
+  },
+  { 
+    "id": 20,
+    "title": "Furnished Private Room in Alexandria",
+    "type": "Shared Room",
+    "price": 10709,
+    "location": "Assiut",
+    "amenities": [
+      "Wi-Fi",
+      "Study Desk",
+      "Shared Kitchen"
+    ],
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1505409859467-3a796fd5798e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870"
+  },
+  {
+    "id": 21,
+    "title": "Furnished Shared Room in Aswan",
+    "type": "Private Room",
+    "price": 5659,
+    "location": "Luxor",
+    "amenities": [
+      "Wi-Fi",
+      "Study Desk",
+      "Shared Kitchen"
+    ],
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1616588589676-62b3bd4ff6d2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1032"
+  },
+  {
+    "id": 22,
+    "title": "Furnished Private Room in Heliopolis",
+    "type": "Apartment",
+    "price": 3705,
+    "location": "New Cairo",
+    "amenities": [
+      "Wi-Fi",
+      "Private Bathroom",
+      "Balcony"
+    ],
+    "rating": 3.6,
+    "image": "https://plus.unsplash.com/premium_photo-1676320102845-4fa58706484e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=945"
+  },
+  {
+    "id": 23,
+    "title": "Luxury Studio in Luxor",
+    "type": "Apartment",
+    "price": 8045,
+    "location": "Nasr City",
+    "amenities": [
+      "Wi-Fi",
+      "Study Desk",
+      "Shared Kitchen"
+    ],
+    "rating": 3.9,
+    "image": "https://plus.unsplash.com/premium_photo-1748021658664-c0d84d2bd9c4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1032"
+  },
+  {
+    "id": 24,
+    "title": "Furnished Private Room in Sheikh Zayed",
+    "type": "Studio",
+    "price": 3437,
+    "location": "Mansoura",
+    "amenities": [
+      "Wi-Fi",
+      "Laundry",
+      "Kitchen"
+    ],
+    "rating": 4.5,
+    "image": "https://plus.unsplash.com/premium_photo-1663126298656-33616be83c32?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870"
+  },
+  {
+    "id": 25,
+    "title": "Furnished Apartment in Heliopolis",
+    "type": "Studio",
+    "price": 9130,
+    "location": "Zagazig",
+    "amenities": [
+      "Wi-Fi",
+      "AC",
+      "Security"
+    ],
+    "rating": 4.6,
+    "image": "https://plus.unsplash.com/premium_photo-1705091306830-a48579b5433a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774"
+  },
+  {
+    "id": 26,
+    "title": "Affordable Apartment in Sohag",
+    "type": "Shared Room",
+    "price": 8983,
+    "location": "Mansoura",
+    "amenities": [
+      "Wi-Fi",
+      "AC",
+      "Security"
+    ],
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1555930112-0159bcdc3fe5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774"
+  },
+  {
+    "id": 27,
+    "title": "Furnished Shared Room in Alexandria",
+    "type": "Private Room",
+    "price": 11519,
+    "location": "Giza",
+    "amenities": [
+      "Wi-Fi",
+      "Laundry",
+      "Kitchen"
+    ],
+    "rating": 3.9,
+    "image": "https://media.istockphoto.com/id/1384376863/photo/compact-room-with-work-area.jpg?s=1024x1024&w=is&k=20&c=veXPp-EL_AGnljHIwGTQUAiCpB1WJjvSoTgMMowh4Rk="
+  },
+  {
+    "id": 28,
+    "title": "Luxury Shared Room in Giza",
+    "type": "Private Room",
+    "price": 10030,
+    "location": "Ismailia",
+    "amenities": [
+      "Wi-Fi",
+      "Private Bathroom",
+      "Balcony"
+    ],
+    "rating": 4.9,
+    "image": "https://images.unsplash.com/photo-1600121848594-d8644e57abab?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870"
+  },
+  {
+    "id": 29,
+    "title": "Affordable Private Room in Port Said",
+    "type": "Studio",
+    "price": 5726,
+    "location": "Fayoum",
+    "amenities": [
+      "Wi-Fi",
+      "AC",
+      "Security"
+    ],
+    "rating": 4.4,
+    "image": "https://plus.unsplash.com/premium_photo-1720707755672-fa44f1711954?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774"
+  },
+  {
+    "id": 30,
+    "title": "Cozy Apartment in Port Said",
+    "type": "Apartment",
+    "price": 7536,
+    "location": "Giza",
+    "amenities": [
+      "Wi-Fi",
+      "Study Desk",
+      "Shared Kitchen"
+    ],
+    "rating": 4.5,
+    "image": "https://media.istockphoto.com/id/1001130682/photo/modern-bright-skandinavian-interior-design-living-room.jpg?s=1024x1024&w=is&k=20&c=u78l3EbX7gEhhQrNAg6659UT2lyvLBR405PFFMJK_fs="
+  },
+  {
+    "id": 31,
+    "title": "Cozy Apartment in Fayoum",
+    "type": "Studio",
+    "price": 2905,
+    "location": "Assiut",
+    "amenities": [
+      "Wi-Fi",
+      "Laundry",
+      "Kitchen"
+    ],
+    "rating": 3.5,
+    "image": "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=869"
+  },
+  {
+    "id": 32,
+    "title": "Cozy Shared Room in Heliopolis",
+    "type": "Private Room",
+    "price": 7762,
+    "location": "Giza",
+    "amenities": [
+      "Wi-Fi",
+      "AC",
+      "Security"
+    ],
+    "rating": 4.6,
+    "image": "https://plus.unsplash.com/premium_photo-1720707755672-fa44f1711954?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774"
+  },
+  {
+    "id": 33,
+    "title": "Luxury Private Room in Beni Suef",
+    "type": "Shared Room",
+    "price": 7583,
+    "location": "Tanta",
+    "amenities": [
+      "Wi-Fi",
+      "Laundry",
+      "Smart TV"
+    ],
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1486304873000-235643847519?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1032"
+  },
+  {
+    "id": 34,
+    "title": "Furnished Studio in Sheikh Zayed",
+    "type": "Apartment",
+    "price": 8790,
+    "location": "Port Said",
+    "amenities": [
+      "Wi-Fi",
+      "Laundry",
+      "Smart TV"
+    ],
+    "rating": 4.9,
+    "image": "https://images.unsplash.com/photo-1616486232086-81d47190669a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1032"
+  },
+  {
+    "id": 35,
+    "title": "Modern Private Room in Fayoum",
+    "type": "Studio",
+    "price": 10744,
+    "location": "Mansoura",
+    "amenities": [
+      "Wi-Fi",
+      "Laundry",
+      "Kitchen"
+    ],
+    "rating": 3.9,
+    "image": "https://plus.unsplash.com/premium_photo-1720707755672-fa44f1711954?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774"
+  },
+  {
+    "id": 36,
+    "title": "Furnished Shared Room in Ismailia",
+    "type": "Shared Room",
+    "price": 3168,
+    "location": "Ismailia",
+    "amenities": [
+      "Wi-Fi",
+      "Laundry",
+      "Kitchen"
+    ],
+    "rating": 4.4,
+    "image": "https://images.unsplash.com/photo-1632119289059-793dd347950f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1032"
+  },
+  {
+    "id": 37,
+    "title": "Luxury Shared Room in Sohag",
+    "type": "Studio",
+    "price": 7476,
+    "location": "Tanta",
+    "amenities": [
+      "Wi-Fi",
+      "Laundry",
+      "Smart TV"
+    ],
+    "rating": 3.7,
+    "image": "https://images.unsplash.com/photo-1628746234641-28eb583a51b4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870"
+  },
+  {
+    "id": 38,
+    "title": "Modern Studio in New Cairo",
+    "type": "Apartment",
+    "price": 3181,
+    "location": "Assiut",
+    "amenities": [
+      "Wi-Fi",
+      "Laundry",
+      "Kitchen"
+    ],
+    "rating": 4.2,
+    "image": "https://plus.unsplash.com/premium_photo-1734549547856-068dadb976eb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=871"
+  },
+  {
+    "id": 39,
+    "title": "Affordable Shared Room in 6th of October City",
+    "type": "Apartment",
+    "price": 9706,
+    "location": "Nasr City",
+    "amenities": [
+      "Wi-Fi",
+      "Private Bathroom",
+      "Balcony"
+    ],
+    "rating": 4.1,
+    "image": "https://plus.unsplash.com/premium_photo-1705091306830-a48579b5433a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774"
+  },
+  {
+    "id": 40,
+    "title": "Modern Private Room in New Cairo",
+    "type": "Apartment",
+    "price": 8874,
+    "location": "Heliopolis",
+    "amenities": [
+      "Wi-Fi",
+      "Private Bathroom",
+      "Balcony"
+    ],
+    "rating": 4.1,
+    "image": "https://plus.unsplash.com/premium_photo-1720707755672-fa44f1711954?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774"
+  }
+]
